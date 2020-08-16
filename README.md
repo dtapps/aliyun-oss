@@ -22,7 +22,7 @@
 
 - 国外仓库地址：[https://github.com/dtapps/aliyun-oss](https://github.com/dtapps/aliyun-oss)
 - 国内仓库地址：[https://gitee.com/dtapps/aliyun-oss](https://gitee.com/dtapps/aliyun-oss)
-- Packagist 地址：[https://packagist.org/packages/liguangchun/qyweixin-grouprobo](https://packagist.org/packages/liguangchun/qyweixin-grouprobo)
+- Packagist 地址：[https://packagist.org/packages/dtapps/aliyun-oss](https://packagist.org/packages/dtapps/aliyun-oss)
 
 ### 开发版
 ```text
