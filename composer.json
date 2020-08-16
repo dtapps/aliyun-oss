@@ -1,0 +1,47 @@
+{
+  "name": "dtapps/aliyun-oss",
+  "description": "ThinkPHP6阿里云存储",
+  "keywords": [
+    "liguangchun",
+    "dtapp",
+    "aliyun",
+    "oss"
+  ],
+  "time": "2020-08-16",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Chaim",
+      "email": "gc@dtapp.net",
+      "homepage": "https://api.dtapp.net"
+    }
+  ],
+  "homepage": "https://www.dtapp.net",
+  "require": {
+    "php": ">=7.1",
+    "liguangchun/think-library": "6.0.*",
+    "aliyuncs/oss-sdk-php": "^2.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "DtApp\\AliYun\\": "src"
+    }
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "DtApp\\AliYun"
+      ],
+      "config": {
+        "dtapp_aliyun": "src/dtapp_aliyun.php"
+      }
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    }
+  }
+}
