@@ -9,7 +9,7 @@
 [![Total Downloads](https://poser.pugx.org/dtapps/aliyun-oss/downloads)](https://packagist.org/packages/dtapps/aliyun-oss) 
 [![License](https://poser.pugx.org/dtapps/aliyun-oss/license)](https://packagist.org/packages/dtapps/aliyun-oss)
 [![PHP Version](https://img.shields.io/badge/php-%3E%3D7.1-8892BF.svg)](http://www.php.net/)
-[![Code Health](https://hn.devcloud.huaweicloud.com/codecheck/v1/codecheck/task/codehealth.svg?taskId=e6994f8dd7774d03913b1e505800e6d0)](https://hn.devcloud.huaweicloud.com/codecheck/project/c7ff3e2d65674858bd363cb43ee6c35e/codecheck/task/e6994f8dd7774d03913b1e505800e6d0/detail)
+[![Code Health](https://hn.devcloud.huaweicloud.com/codecheck/v1/codecheck/task/codehealth.svg?taskId=967ff699e95d485e84c4b821ac30a27e)](https://hn.devcloud.huaweicloud.com/codecheck/project/c7ff3e2d65674858bd363cb43ee6c35e/codecheck/task/967ff699e95d485e84c4b821ac30a27e/detail)
 [![Build Status](https://travis-ci.org/dtapps/aliyun-oss.svg?branch=6.0)](https://travis-ci.org/dtapps/aliyun-oss)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dtapps/aliyun-oss/badges/quality-score.png?b=6.0)](https://scrutinizer-ci.com/g/dtapps/aliyun-oss/?branch=6.0)
 [![Code Coverage](https://scrutinizer-ci.com/g/dtapps/aliyun-oss/badges/coverage.png?b=6.0)](https://scrutinizer-ci.com/g/dtapps/aliyun-oss/?branch=6.0)
@@ -46,13 +46,12 @@ composer remove dtapps/aliyun-oss -vvv
 
 ## 使用
 ```php
-use DtApp\Notice\QyWeiXin\qywechat\GroupRobotService;
+use DtApp\AliYun\aliyun\OssService;
 
-try {
-    GroupRobotService::instance()
-        ->key('xxx-x-x-x-xxx')
-        ->text('测试');
-} catch (\DtApp\Notice\QyWeiXin\exception\Exception $e) {
-    var_dump($e->getMessage());
-}
+OssService::instance()
+    ->accessKeyId('')
+    ->accessKeySecret('')
+    ->bucket('')
+    ->endpoint('')
+    ->upload('', '');
 ```
